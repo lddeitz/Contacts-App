@@ -1,0 +1,10 @@
+<h1><% @contacts.each do |contact| %></h1>
+  <h3>First Name: <%= contact.first_name%></h3>
+  <h3>Middle Name: <%= contact.middlename%></h3>
+  <h3>Last Name: <%= contact.last_name%></h3>
+  <h3>Email: <%= contact.email%></h3>
+  <h3>Phone Number: <%= contact.phone_number%></h3>
+  <h3>Biography: <%= contact.bio%></h3>
+  <h3>Latitude: <%= contact.latitude%></h3>
+  <h3>Longitude: <%= contact.longitude%></h3>
+<h1><% end %></h1>

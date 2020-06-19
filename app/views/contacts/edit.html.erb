@@ -1,0 +1,39 @@
+<h1>Edit A Contact</h1>
+<form action="/contacts/<% @contacts.id %>" method="post">
+
+<form action="/contacts" method="post">
+<div>
+  first name: <input type="text" name="first_name" value="<%= @contacts.first_name%>%">
+</div>
+
+<div>
+  middle name: <input type="text" name="middlename" value="<%= @contacts.middlename%>">
+</div>
+
+<div>
+  last name: <input type="text" name="last_name" value="<%@contacts.last_name%>%">
+</div>
+
+<div>
+  email: <input type="text" name="email" value="<%=@contacts.email%>%">
+</div>
+
+<div>
+  phone number: <input type="text" name="phone_number" value="<%=@contacts.phone_number%>%">
+</div>
+
+<div>
+  bio: <input type="text" name="bio" value="<%=@contacts.bio%>%">
+</div>
+
+<div>
+  latitude: <input type="text" name="latitude" value="<%@contacts.latitude%>%">
+</div>
+
+<div>
+  longitude: <input type="text" name="longitude" value="<%@contacts.longitude%>%">
+</div>
+
+<button type="submit">create new contact</button>
+
+</form>
